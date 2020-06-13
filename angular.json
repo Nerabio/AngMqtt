@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ang-mqtt"
+    }
+  },
+  "defaultProject": "ang-mqtt",
+  "cli": {
+    "analytics": "93cd3171-e0f1-4c82-ac79-da7caa50c47f"
+  }
 }
