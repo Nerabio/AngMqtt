@@ -4,6 +4,7 @@ import { FormsModule } from "@angular/forms";
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MqttModule, IMqttServiceOptions } from "ngx-mqtt";
+import { UiModule } from './ui-components/ui.module';
 export const MQTT_SERVICE_OPTIONS: IMqttServiceOptions = {
   hostname: 'wqtt.ru',
   port: 3158,
@@ -21,7 +22,8 @@ export const MQTT_SERVICE_OPTIONS: IMqttServiceOptions = {
     BrowserModule,
     FormsModule,
     AppRoutingModule,
-    MqttModule.forRoot(MQTT_SERVICE_OPTIONS)
+    MqttModule.forRoot(MQTT_SERVICE_OPTIONS),
+    UiModule
   ],
   providers: [],
   bootstrap: [AppComponent]

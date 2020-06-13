@@ -1,0 +1,8 @@
+<label class="switch">
+  <input type="checkbox"
+  [(ngModel)]="model"
+  (ngModelChange)="modelChange.emit(model)"
+  (click)="change(model)"
+  [disabled]="disabled">
+  <span class="slider round"></span>
+</label>
